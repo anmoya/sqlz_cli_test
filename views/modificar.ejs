@@ -1,0 +1,10 @@
+<% include ./partials/header %>
+
+<form action="/info/<%= id %>/modificar" method="post">
+    
+
+<input type="text" name="name" value="" placeholder="Nombre Café">
+<input type="text" name="type" value="" placeholder="Tipo Café">
+<input type="submit" name="enviar" value="enviar">
+</form>
+<% include ./partials/footer %>

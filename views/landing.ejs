@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+
+<table class="table">
+    <thead>
+        <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        </tr>
+    </thead>
+        
+    <tbody>
+<% compras.forEach( item => { %>
+        <tr>
+            <td><%= item.dataValues.id %></td>
+            <td><%= item.dataValues.name %></td>
+            <td><a class='btn btn-default' href="/info/<%= item.dataValues.id %>">Info</a></td>
+        </tr>
+<% }); %>
+    </tbody>
+</table>
+<% include ./partials/footer %>
